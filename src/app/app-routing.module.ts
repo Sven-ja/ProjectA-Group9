@@ -8,8 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
   {
     path: "", component: NavbarComponent
-  },
-  {
+  }, {
     path: "courses", component: CourseComponent
   }, {
     path: "technologies", component: TechnologiesComponent

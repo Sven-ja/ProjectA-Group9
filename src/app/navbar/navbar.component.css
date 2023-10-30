@@ -1,3 +1,5 @@
+@import "../../variables.css";
+
 .myNavbar {
     position: fixed;
     width: 100vw;
@@ -10,7 +12,7 @@
 }
 
 .navbar-nav a {
-    color: black;
+    color: var(--red);
     padding-left: 2rem;
 }
 
