@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 <<<<<<< HEAD
 import { CourseComponent } from './course/course.component';
+import { NewsComponent } from './news/news.component';
+import { TeachersComponent } from './teachers/teachers.component';
 =======
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
@@ -14,7 +16,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
   declarations: [
     AppComponent,
 <<<<<<< HEAD
-    CourseComponent
+    CourseComponent,
+NewsComponent,
+TeachersComponent
 =======
     TechnologiesComponent,
     TestimonialsComponent
