@@ -1,0 +1,58 @@
+<!-- Added the first basic navbar element from Bootstrap and removed the searchbar -->
+
+<!-- Added a myNavbar class: change to fixed position & add opacity to background in CSS -->
+<nav class="myNavbar navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="">
+            <img id="logo" src="../../assets/svenja/img/cf-logo.png" alt="CodeFactory">
+        </a>
+        <!-- Added a myToggler class to add some margin on the right side -->
+        <button class="myToggler navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- I tried to organize the different links a bit, but I think we should speak about that a bit further down the way -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="">Mission</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" routerLink="/courses">Courses</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="">Team</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" routerLink="/technologies">Technologies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" routerLink="">Impressum</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/testimonials">Stories</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="test">TEst</div>

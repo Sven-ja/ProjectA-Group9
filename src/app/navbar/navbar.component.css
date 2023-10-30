@@ -1,0 +1,25 @@
+.myNavbar {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 5;
+}
+
+.myNavbar #logo {
+    height: 10vh;
+}
+
+.navbar-nav a {
+    color: black;
+    padding-left: 2rem;
+}
+
+.myToggler {
+    margin-right: 1.5rem;
+}
+
+.test {
+    height: 200vh;
+    position: relative;
+    top: 15vh;
+}
