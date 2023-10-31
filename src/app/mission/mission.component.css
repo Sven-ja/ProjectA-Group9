@@ -1,0 +1,17 @@
+#our-mission {
+    background-color: #f8f9fa;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #our-mission h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #our-mission p {
+    font-size: 18px;
+    color: #333;
+  }
+  
