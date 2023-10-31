@@ -1,0 +1,87 @@
+/* Allgemeine Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5a5a5a;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Zentriert den Text im Container */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;/* Allgemeine Styles */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        color: #333;
+    }
+    
+    ul.technologies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    
+    li.technology {
+        flex-basis: calc(33.33% - 20px);
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        text-align: center;
+    }
+    
+    color: #333;
+}
+
+/* Rasteransicht */
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none; /* Entfernt die Aufzählungspunkte für die Liste */
+    padding: 0;
+}
+
+.technology {
+    flex-basis: calc(33.33% - 20px); /* Drittel der Breite mit Abstand dazwischen */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center; /* Zentriert den Text im Container */
+}
+
+.technology:hover {
+    transform: translateY(-5px);
+}

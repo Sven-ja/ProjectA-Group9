@@ -7,42 +7,39 @@ declare var $: any;
   styleUrls: ['./testimonials.component.css']
 })
 export class TestimonialsComponent implements OnInit, AfterViewInit {
-  constructor() { }
-
-  ngOnInit() { }
-
-  ngAfterViewInit() {
-    // Initialisiere den Slider, wenn die Komponente bereit ist
-    this.initTestimonials();
+  
+  ngOnInit() {
+    // Hier kannst du Code ausführen, der beim Initialisieren der Komponente ausgeführt werden soll
   }
 
-  initTestimonials() {
-    const owl = $('.testimonial-carousel');
-    owl.owlCarousel({
-      items: 1,
-      loop: false,
-      nav: true,
-      dots: false
-    });
+  ngAfterViewInit() {
+    const testimonialCarousel = document.querySelector(".testimonial-carousel");
+    
+    if (testimonialCarousel) {
+      const prevButton = document.querySelector(".prev-slide");
+      const nextButton = document.querySelector(".next-slide");
 
-    // Starte mit der Anzeige der ersten Person
-    $('#person1').show();
-    $('#person2, #person3').hide();
-
-    // Klickereignishandler für den "Next"-Pfeil
-    $('.next-slide').click((e: any) => {
-      e.preventDefault();
-      // Verberge die aktuell angezeigte Person
-      $('.testimony-slide.active').hide().removeClass('active');
-
-      // Zeige die nächste Person an
-      if ($('#person1').is(':visible')) {
-        $('#person2').show().addClass('active');
-      } else if ($('#person2').is(':visible')) {
-        $('#person3').show().addClass('active');
-      } else {
-        $('#person1').show().addClass('active');
+      if (prevButton) {
+        // Event-Handler für den "Prev"-Button
+        prevButton.addEventListener("click", () => {
+          const testimonials = testimonialCarousel.querySelectorAll(".testimony-slide");
+          let currentTestimonialIndex = Array.from(testimonials).findIndex(testimonial => testimonial.classList.contains("active"));
+          testimonials[currentTestimonialIndex].classList.remove("active");
+          currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+          testimonials[currentTestimonialIndex].classList.add("active");
+        });
       }
-    });
+
+      if (nextButton) {
+        // Event-Handler für den "Next"-Button
+        nextButton.addEventListener("click", () => {
+          const testimonials = testimonialCarousel.querySelectorAll(".testimony-slide");
+          let currentTestimonialIndex = Array.from(testimonials).findIndex(testimonial => testimonial.classList.contains("active"));
+          testimonials[currentTestimonialIndex].classList.remove("active");
+          currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+          testimonials[currentTestimonialIndex].classList.add("active");
+        });
+      }
+    }
   }
 }
