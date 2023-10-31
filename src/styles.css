@@ -7,3 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
