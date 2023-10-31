@@ -10,9 +10,13 @@ import { TeachersComponent } from './teachers/teachers.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
+
+
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DummyComponent } from './dummy/dummy.component';
+import { HeroComponent } from './hero/hero.component';
+import { FooterComponent } from './footer/footer.component';
+import { MissionComponent } from './mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { DummyComponent } from './dummy/dummy.component';
     TestimonialsComponent,
     CourseComponent,
     NavbarComponent,
-    DummyComponent
+    HeroComponent,
+    FooterComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,
