@@ -4,6 +4,7 @@ import { CourseComponent } from './course/course.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TeachersComponent } from './teachers/teachers.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,16 @@ const routes: Routes = [
   }, {
     path: "courses", component: CourseComponent
   }, {
-    path: "technologies", component: TechnologiesComponent
+    path: "teachers", component: TeachersComponent,
+  },
+  {
+    path: "technologies", component: TechnologiesComponent,
+    // children: [
+    //   {
+    //     path: 'teachers',
+    //     component: TeachersComponent
+    //   }
+    // ]
   }, {
     path: "testimonials", component: TestimonialsComponent
   }, {

@@ -10,8 +10,6 @@ import { TeachersComponent } from './teachers/teachers.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
-
-
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
