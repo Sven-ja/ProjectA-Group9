@@ -11,9 +11,11 @@ import { TechnologiesComponent } from './technologies/technologies.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
-
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
+import { FooterComponent } from './footer/footer.component';
+import { MissionComponent } from './mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     TechnologiesComponent,
     TestimonialsComponent,
     CourseComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeroComponent,
+    FooterComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,
