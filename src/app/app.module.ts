@@ -12,6 +12,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     TechnologiesComponent,
     TestimonialsComponent,
     CourseComponent,
-    NavbarComponent
+    NavbarComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,
