@@ -3,4 +3,6 @@
 /* Example: CodeFactory Red - can be replaced later on if we want a different one */
 :root {
     --cf-red: #8c181b;
+    --main-font: Arial;
+    --title-font: Arial;
 }
