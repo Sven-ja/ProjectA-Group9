@@ -1,16 +1,7 @@
 
 @media screen and (max-width: 768px) {
-    #fh5co-course-categories,
-    #fh5co-counter,
-    #fh5co-course,
-    #fh5co-register,
-    #fh5co-pricing,
-    #fh5co-testimonial,
-    #fh5co-blog,
-    #fh5co-about,
-    #fh5co-staff,
-    #fh5co-contact,
-    #fh5co-footer {
+    #fh5co-testimonial
+    {
     padding: 3em 0;
     }
     }
