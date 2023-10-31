@@ -1,9 +1,14 @@
+    
 .hero-section{
+    color: rgb(219, 222, 224);
     text-align: center;
     padding: 50vh;
-    background-color: rgba(255, 228, 196, 0.357);
+    background-color: rgba(0, 0, 0, 0.128);
+    background-image: url('/assets/Amy/hero3.jpg');
+    background-size: cover;
 }
 .hero-section p {
+   
     font-size: 1.2rem;
     margin-bottom: 30px;
  
