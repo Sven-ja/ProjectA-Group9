@@ -10,21 +10,6 @@ const routes: Routes = [
   {
     path: "", component: NavbarComponent
   }, {
-    path: "courses", component: CourseComponent
-  }, {
-    path: "teachers", component: TeachersComponent,
-  },
-  {
-    path: "technologies", component: TechnologiesComponent,
-    // children: [
-    //   {
-    //     path: 'teachers',
-    //     component: TeachersComponent
-    //   }
-    // ]
-  }, {
-    path: "testimonials", component: TestimonialsComponent
-  }, {
     path: "**", redirectTo: ""
   }
 ];

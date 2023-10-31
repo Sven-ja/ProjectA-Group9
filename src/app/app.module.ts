@@ -17,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { MissionComponent } from './mission/mission.component';
 import { FooterComponent } from './footer/footer.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HeroComponent,
     FooterComponent,
-    MissionComponent
+    MissionComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,

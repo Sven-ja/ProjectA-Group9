@@ -1,12 +1,12 @@
-<!-- Added the first basic navbar element from Bootstrap and removed the searchbar -->
+<!-- Basic navbar element from Bootstrap without the searchbar -->
 
-<!-- Added a myNavbar class: change to fixed position & add opacity to background in CSS -->
+<!-- myNavbar class: change to fixed position & add opacity to background in CSS -->
 <nav class="myNavbar navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="">
+        <a class="navbar-brand" role="button" (click)="navigateToSection('hero')">
             <img id="logo" src="../../assets/svenja/img/cf-logo.png" alt="CodeFactory">
         </a>
-        <!-- Added a myToggler class to add some margin on the right side -->
+        <!-- myToggler class to add some margin on the right side -->
         <button class="myToggler navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -16,38 +16,43 @@
         <!-- I tried to organize the different links a bit, but I think we should speak about that a bit further down the way -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Click-event rather than routerLink to scroll to the components. Sections need to get IDs as wrapper! -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" role="button" (click)="navigateToSection('hero')"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Home
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" routerLink="">Mission</a></li>
+                        <li><a class="dropdown-item" role="button" (click)="navigateToSection('mission')">Mission</a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" routerLink="/courses">Courses</a></li>
+                        <li><a class="dropdown-item" role="button" (click)="navigateToSection('courses')">Courses</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="/technologies" role="button"
+                    <a class="nav-link dropdown-toggle" role="button" (click)="navigateToSection('teachers')"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Techno
+                        About
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" routerLink="/teachers">Teachers</a></li>
+                        <li><a class="dropdown-item" role="button" (click)="navigateToSection('teachers')">Teachers</a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" routerLink="teacher">test</a></li>
-                        <li>
+                        <li><a class="dropdown-item" role="button"
+                                (click)="navigateToSection('technologies')">Technologies</a></li>
+                        <!-- <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" (click)="navigateToSection('dummy')">Dummy</a></li>
+                        <li><a class="dropdown-item" (click)="navigateToSection('dummy')">Dummy</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/testimonials">Stories</a>
+                    <a class="nav-link" role="button" (click)="navigateToSection('testimonials')">Stories</a>
                 </li>
             </ul>
 
@@ -55,4 +60,4 @@
     </div>
 </nav>
 
-<div class="test">TEst</div>
+<div class="blanco"></div>

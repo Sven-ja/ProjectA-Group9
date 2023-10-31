@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./technologies.component.css']
 })
 export class TechnologiesComponent {
-
+  
 }
+
+
