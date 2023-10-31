@@ -11,6 +11,7 @@ import { TechnologiesComponent } from './technologies/technologies.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
+
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';

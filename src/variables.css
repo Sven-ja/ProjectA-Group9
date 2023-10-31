@@ -2,7 +2,5 @@
 
 /* Example: CodeFactory Red - can be replaced later on if we want a different one */
 :root {
-    --red: #8c181b;
+    --cf-red: #8c181b;
 }
-
-/* Warning: is not working yet - I need to fix that tomorrow morning with Riolas help */

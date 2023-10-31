@@ -1,0 +1,14 @@
+30.10.
+- Setting up a group channel on Slack for easy communication:
+    _Svenja is chosen as a team leader
+- First Zoom meeting to get to know each other, discussion about different projects:
+    _Project A is chosen because it seems to be the one where functionality can stand out the most
+    _Decision is made to use Angular (each person can work on own components) and Bootstrap (mainly for reasons of responsivness)
+- 40 minutes of individual brainstorming what look each person likes in a landing page
+- Second Zoom meeting to discuss research results:
+    _bright colors/white background to invite people rather than to intimidate them
+    _navbar with all the landing page components, when clicked it scrolls to the component
+    _row layout for the content to organize the different topics
+    --> layout drafting with draw.io, assigning tasks to each person
+- Set up of the Angular project and pushing it to a shared Github repository
+- Personal work on components
