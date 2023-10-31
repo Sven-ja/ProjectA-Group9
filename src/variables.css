@@ -1,8 +1,15 @@
-/* COLOR PALETTE */
+/* VARIABLES */
 
-/* Example: CodeFactory Red - can be replaced later on if we want a different one */
 :root {
-    --cf-red: #8c181b;
+    /* fonts */
     --main-font: Arial;
     --title-font: Arial;
+
+    /* main-colors */
+    --cf-red: #8c181b;
+
+    /* background-colors */
+    --c1: rgba(140, 24, 27, 0.4);
+    --c2: rgba(255, 153, 153, 0.4);
+    --c3: rgba(255, 204, 204, 0.4);
 }
