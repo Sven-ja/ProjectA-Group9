@@ -15,8 +15,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
-import { FooterComponent } from './footer/footer.component';
 import { MissionComponent } from './mission/mission.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
