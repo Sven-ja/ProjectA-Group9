@@ -11,7 +11,7 @@
 
 .navbar-nav a {
     /* color: var(--cf-red); */
-
+    color: black;
     padding-left: 2rem;
 }
 
@@ -19,8 +19,8 @@
     margin-right: 1.5rem;
 }
 
-.test {
-    height: 200vh;
+.blanco {
+    height: 20vh;
     position: relative;
-    top: 15vh;
+    top: 0;
 }

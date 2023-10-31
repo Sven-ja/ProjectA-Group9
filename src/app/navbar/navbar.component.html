@@ -1,12 +1,12 @@
-<!-- Added the first basic navbar element from Bootstrap and removed the searchbar -->
+<!-- Basic navbar element from Bootstrap without the searchbar -->
 
-<!-- Added a myNavbar class: change to fixed position & add opacity to background in CSS -->
+<!-- myNavbar class: change to fixed position & add opacity to background in CSS -->
 <nav class="myNavbar navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" routerLink="">
             <img id="logo" src="../../assets/svenja/img/cf-logo.png" alt="CodeFactory">
         </a>
-        <!-- Added a myToggler class to add some margin on the right side -->
+        <!-- myToggler class to add some margin on the right side -->
         <button class="myToggler navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -43,6 +43,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
+                        <!-- Click-event rather than routerLink to scroll to the components -->
                         <li><a class="dropdown-item" (click)="navigateToSection('dummy')">Dummy</a></li>
                     </ul>
                 </li>
@@ -55,4 +56,4 @@
     </div>
 </nav>
 
-<div class="test">TEst</div>
+<div class="blanco"></div>
