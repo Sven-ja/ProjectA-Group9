@@ -1,0 +1,58 @@
+#myCarousel {
+    width: 100%;
+    margin: 0;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.container.mt-4{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: rgb(255, 204, 204, 0.4);
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 204, 204, 0.4);
+}
+
+.carousel-item{
+    background-color: rgb(255, 204, 204, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+
+.carousel-caption{
+    background-color: rgb(255, 204, 204, 0.4);
+    width: 100%;
+    position: absolute;
+    top: 77%;
+    left: 15%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: visible;
+    transform: translateX(-15%);
+}
+
+.carousel-caption h3{
+    font-size: 34px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    top: 80%;
+}
+
+.carousel-caption .btn{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
