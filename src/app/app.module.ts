@@ -11,7 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { MissionComponent } from './mission/mission.component';
 import { FooterComponent } from './footer/footer.component';
-import { ImpressumComponent } from './impressum/impressum.component';
+
 
 
 
@@ -29,7 +29,6 @@ import { ImpressumComponent } from './impressum/impressum.component';
     HeroComponent,
     FooterComponent,
     MissionComponent,
-    ImpressumComponent
   ],
   imports: [
     BrowserModule,

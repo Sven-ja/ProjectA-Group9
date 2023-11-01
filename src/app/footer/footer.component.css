@@ -2,20 +2,27 @@ footer {
     background-color: #333333f8;
     color: #e1dbdb;
     padding: 20px 0;
+   
   }
   
-  .container {
+  .footer-container {
     display: flex;
     justify-content: space-between;
+    margin:0 30px;
     align-items: center;
-  }
-  
-  .footer-left, .footer-right {
-    flex: 1;
-  }
-  
-  .footer-center {
     flex: 0 0 60%;
-    text-align: center;
+   
   }
   
+   a{
+    text-decoration: none;
+    color: #e1dbdb;
+  }
+  .social-icons {
+    margin: 50px;
+}
+
+.social-icons a {
+    margin: 40px;
+
+}
