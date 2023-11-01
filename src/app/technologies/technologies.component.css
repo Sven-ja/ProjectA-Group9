@@ -1,18 +1,27 @@
 /* Allgemeine Styles */
 .container {
-    max-width: 800px;
+    max-width: 1200px;
+    height: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #5a5a5a;
+    background-color: #ff9a9a;
     font-family: Arial, sans-serif;
     text-align: center; /* Zentriert den Text im Container */
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    transition: font-size 0.3s, color 0.3s; /* Füge den Übergangseffekt hinzu */
+  }
+  
+  h2:hover {
+    font-size: 2.2rem; /* Ändere die gewünschte Größe */
+    color: #ff0000; /* Ändere die gewünschte Farbe */
+  }
+  
 
 h3 {
     font-size: 1.2rem;

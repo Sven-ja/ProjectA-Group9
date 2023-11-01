@@ -1,7 +1,16 @@
+
 #fh5co-testimonial {
-  background: #1F5F8B;
+  background: #0072be;
   position: relative;
-  padding: 3em 0; 
+  padding: 3em 0;
+  height: 700px; /* Setze die gewünschte Höhe in Pixeln */
+  overflow: hidden;
+  transition: 1s ease; /* Füge den Übergangseffekt hinzu */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 #fh5co-testimonial .overlay {
@@ -11,13 +20,13 @@
   left: 0;
   right: 0;
   content: '';
-  background: #5a5a5a;
+  background: #ff9a9a;
 }
 
 #fh5co-testimonial .testimony-slide {
-  text-align: center;
+  font-size: x-large;
   position: relative;
-  color: #fff;
+  color: #ffffff;
 }
 
 #fh5co-testimonial .testimony-slide span {
@@ -29,7 +38,7 @@
 }
 
 #fh5co-testimonial .testimony-slide span small {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 3px;
 }
@@ -45,13 +54,14 @@
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
+  transition: transform 0.1s ease; /* Füge den Übergangseffekt hinzu */
 }
 
 #fh5co-testimonial .testimony-slide blockquote {
   border: none;
   margin: 30px auto;
-  width: 70%;
-  position: relative;
+  width: 90%;
+  position: center;
   padding: 0;
 }
 
@@ -70,12 +80,13 @@
 }
 
 #fh5co-testimonial .fh5co-heading {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 #fh5co-testimonial .fh5co-heading h2 {
-  color: #fff;
-  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin: 5px;
 }
 
 #fh5co-testimonial .fh5co-heading h2:after {
@@ -87,14 +98,15 @@
 }
 
 #fh5co-testimonial .fh5co-heading span {
-  padding: 7px 15px;
+  padding: 10px 15px;
   position: relative;
+  text-align: center;
 }
 
 #fh5co-testimonial .fh5co-heading span:before {
   position: absolute;
-  top: 24px;
-  left: -40px;
+  top: 30px;
+  left: -50px;
   content: '';
   width: 40px;
   height: 1px;
@@ -103,39 +115,86 @@
 
 #fh5co-testimonial .fh5co-heading span:after {
   position: absolute;
-  top: 24px;
-  right: -40px;
+  top: 30px;
+  right: -50px;
   content: '';
   width: 40px;
   height: 1px;
   background: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   #fh5co-testimonial {
-    padding: 3em 0;
+    padding: 5em 0;
   }
 }
 
-#fh5co-testimonial .arrow-thumb {
+#fh5co-testimonial .next,
+#fh5co-testimonial .prev {
   position: absolute;
-  top: 50%;
-  right: 20px;
+  top: 40%;
+  font-size: 30px;
+  color: #ff0000;
+  text-decoration: none;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 2s ease, transform 0.5s ease; /* Füge den Übergangseffekt hinzu */
+}
+
+#fh5co-testimonial .next:hover,
+#fh5co-testimonial .prev:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+  transform: scale(1.1); /* Vergrößere das Element leicht beim Hover */
+}
+
+#fh5co-testimonial .next {
+  right: 100px;
   transform: translateY(-50%);
   z-index: 100;
 }
 
-#fh5co-testimonial .arrow-thumb a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-}
-
-#fh5co-testimonial .arrow-thumb a:hover {
-  text-decoration: underline;
+#fh5co-testimonial .prev {
+  left: 100px;
+  transform: translateY(-50%);
+  z-index: 100;
 }
 
 #person2,
 #person3 {
   display: none;
 }
+
+#fh5co-testimonial .testimony-slide .user {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  transition: transform .1s ease; /* Füge den Übergangseffekt hinzu */
+}
+
+#fh5co-testimonial .testimony-slide .user:hover {
+  transform: scale(1.1); /* Vergrößere das Element leicht beim Hover */
+}
+
+.col-md-12 h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+  transition: font-size 0.3s, color 0.3s; /* Füge den Übergangseffekt hinzu */
+}
+
+.col-md-12 h2:hover {
+  font-size: 2.2rem; /* Ändere die gewünschte Größe */
+  color: #ff0000; /* Ändere die gewünschte Farbe */
+}
+
