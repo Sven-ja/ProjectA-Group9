@@ -11,6 +11,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { MissionComponent } from './mission/mission.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HeroComponent,
     FooterComponent,
-    MissionComponent
+    MissionComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
