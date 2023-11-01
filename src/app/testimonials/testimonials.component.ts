@@ -6,40 +6,52 @@ declare var $: any;
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.css']
 })
+// Vorherige Importe und Deklarationen...
+
 export class TestimonialsComponent implements OnInit, AfterViewInit {
-  
+
   ngOnInit() {
     // Hier kannst du Code ausführen, der beim Initialisieren der Komponente ausgeführt werden soll
   }
 
   ngAfterViewInit() {
-    const testimonialCarousel = document.querySelector(".testimonial-carousel");
-    
-    if (testimonialCarousel) {
-      const prevButton = document.querySelector(".prev-slide");
-      const nextButton = document.querySelector(".next-slide");
+    // Hier füge den JavaScript-Code ein
 
-      if (prevButton) {
-        // Event-Handler für den "Prev"-Button
-        prevButton.addEventListener("click", () => {
-          const testimonials = testimonialCarousel.querySelectorAll(".testimony-slide");
-          let currentTestimonialIndex = Array.from(testimonials).findIndex(testimonial => testimonial.classList.contains("active"));
-          testimonials[currentTestimonialIndex].classList.remove("active");
-          currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
-          testimonials[currentTestimonialIndex].classList.add("active");
-        });
-      }
+    // Finde die HTML-Elemente
+    const nextButton = document.querySelector('.next') as HTMLElement;
+    const prevButton = document.querySelector('.prev') as HTMLElement;
+    const person1 = document.querySelector('#person1') as HTMLElement;
+    const person2 = document.querySelector('#person2') as HTMLElement;
+    const person3 = document.querySelector('#person3') as HTMLElement;
 
-      if (nextButton) {
-        // Event-Handler für den "Next"-Button
-        nextButton.addEventListener("click", () => {
-          const testimonials = testimonialCarousel.querySelectorAll(".testimony-slide");
-          let currentTestimonialIndex = Array.from(testimonials).findIndex(testimonial => testimonial.classList.contains("active"));
-          testimonials[currentTestimonialIndex].classList.remove("active");
-          currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
-          testimonials[currentTestimonialIndex].classList.add("active");
-        });
-      }
+    // Array, das die Personen-Elemente in der gewünschten Reihenfolge enthält
+    const persons = [person1, person2, person3];
+    let currentIndex = 0; // Aktueller Index der angezeigten Person
+
+    // Funktion zum Anzeigen der Person mit dem gegebenen Index
+    function showPerson(index: number) {
+      persons.forEach((person, i) => {
+        if (i === index) {
+          person.style.display = 'block';
+        } else {
+          person.style.display = 'none';
+        }
+      });
     }
+
+    // Next-Button-Klick-Ereignis
+    nextButton.addEventListener('click', function () {
+      currentIndex = (currentIndex + 1) % persons.length;
+      showPerson(currentIndex);
+    });
+
+    // Previous-Button-Klick-Ereignis
+    prevButton.addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + persons.length) % persons.length;
+      showPerson(currentIndex);
+    });
+
+    // Zeige die erste Person an (Startzustand)
+    showPerson(currentIndex);
   }
 }

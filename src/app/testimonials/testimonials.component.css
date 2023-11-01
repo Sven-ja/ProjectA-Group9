@@ -75,7 +75,7 @@
 
 #fh5co-testimonial .fh5co-heading h2 {
   color: #fff;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 #fh5co-testimonial .fh5co-heading h2:after {
@@ -117,22 +117,29 @@
   }
 }
 
-#fh5co-testimonial .arrow-thumb {
+#fh5co-testimonial .next, #fh5co-testimonial .prev {
   position: absolute;
   top: 50%;
-  right: 20px;
+  font-size: 40px;
+  color: #ff0000;
+  text-decoration: none;
+  padding: 10px 20px; /* Ändere diese Werte entsprechend deinen Anforderungen */
+  background-color: transparent; /* Hintergrundfarbe des Buttons */
+  border: none; /* Entfernt den Button-Rahmen, falls gewünscht */
+  cursor: pointer; /* Ändert den Mauszeiger beim Überfahren des Buttons */
+  transition: background-color 0.3s ease; /* Übergangseffekt für die Hintergrundfarbe */
+}
+
+#fh5co-testimonial .next {
+  right: 200px;
   transform: translateY(-50%);
   z-index: 100;
 }
 
-#fh5co-testimonial .arrow-thumb a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-}
-
-#fh5co-testimonial .arrow-thumb a:hover {
-  text-decoration: underline;
+#fh5co-testimonial .prev {
+  left: 200px;
+  transform: translateY(-50%);
+  z-index: 100;
 }
 
 #person2,
