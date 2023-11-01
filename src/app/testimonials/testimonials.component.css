@@ -80,13 +80,12 @@
 }
 
 #fh5co-testimonial .fh5co-heading {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 #fh5co-testimonial .fh5co-heading h2 {
   text-align: center;
-  color: white;
-  margin: 5px;
+  margin: 20px;
 }
 
 #fh5co-testimonial .fh5co-heading h2:after {
@@ -197,4 +196,40 @@
   font-size: 2.2rem; /* Ändere die gewünschte Größe */
   color: #ff0000; /* Ändere die gewünschte Farbe */
 }
+
+
+#person1 blockquote p,
+#person2 blockquote p,
+#person3 blockquote p {
+  font-size: 20px;
+  color: #fff;
+  animation: glowing 2s infinite;
+  transition: font-size 0.3s;
+  padding: 0; /* Aufhebung der Padding-Begrenzung */
+  margin: 0; /* Aufhebung der Margin-Begrenzung */
+  line-height: normal; /* Aufhebung der Zeilenhöhe-Begrenzung */
+}
+
+
+#person1 blockquote p:hover,
+#person2 blockquote p:hover,
+#person3 blockquote p:hover {
+  font-size: 24px; /* Ändere die Schriftgröße beim Hover nach deinen Wünschen */
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Anfangsleuchten */
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Höhepunkt des Leuchtens */
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Endleuchten */
+  }
+}
+
+
+
+
 
