@@ -1,7 +1,9 @@
 .myNavbar {
     position: fixed;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.8);
+    /* If the height gets changed, it has to be adapted in the scroll function in the ts file */
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 5;
 }
 
@@ -19,8 +21,8 @@
     margin-right: 1.5rem;
 }
 
-.blanco {
-    height: 20vh;
+/* .blanco {
+    height: 15vh;
     position: relative;
     top: 0;
-}
+} */

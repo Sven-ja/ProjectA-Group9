@@ -8,9 +8,13 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
 
   navigateToSection(sectionId: string): void {
+    // -15 is coming from the CSS where the Navbar gets an height of 15vh; the +1 makes it look a bit nicer
+    const yOffset = (-15 * window.innerHeight / 100) + 1;
     const element = document.getElementById(sectionId);
+
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    };
   }
 }
