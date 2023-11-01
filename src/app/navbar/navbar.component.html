@@ -13,7 +13,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- I tried to organize the different links a bit, but I think we should speak about that a bit further down the way -->
+        <!-- I tried to organize the different links a bit, but that can be changed if it makes more sense -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!-- Click-event rather than routerLink to scroll to the components. Sections need to get IDs as wrapper! -->
@@ -33,7 +33,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" (click)="navigateToSection('teachers')"
+                    <a class="nav-link dropdown-toggle" role="button" (click)="navigateToSection('impressum')"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         About
                     </a>
@@ -45,10 +45,6 @@
                         </li>
                         <li><a class="dropdown-item" role="button"
                                 (click)="navigateToSection('technologies')">Technologies</a></li>
-                        <!-- <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" (click)="navigateToSection('dummy')">Dummy</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -61,5 +57,3 @@
         </div>
     </div>
 </nav>
-
-<!-- <div class="blanco"></div> -->
