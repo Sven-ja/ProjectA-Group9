@@ -18,6 +18,7 @@ import { HeroComponent } from './hero/hero.component';
 import { MissionComponent } from './mission/mission.component';
 import { FooterComponent } from './footer/footer.component';
 import { DummyComponent } from './dummy/dummy.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { DummyComponent } from './dummy/dummy.component';
     HeroComponent,
     FooterComponent,
     MissionComponent,
-    DummyComponent
+    DummyComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
