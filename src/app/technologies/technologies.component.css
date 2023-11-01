@@ -3,15 +3,16 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #5a5a5a;
+    background-color: #ff9a9a;
     font-family: Arial, sans-serif;
     text-align: center; /* Zentriert den Text im Container */
 }
 
 h2 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #333;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
 }
 
 h3 {

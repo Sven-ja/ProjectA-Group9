@@ -2,8 +2,14 @@
   background: #0072be;
   position: relative;
   padding: 3em 0;
-  height: 500px; /* Setze die gewünschte Höhe in Pixeln */
+  height: 700px; /* Setze die gewünschte Höhe in Pixeln */
   overflow: hidden;
+  transition: 1s ease; /* Füge den Übergangseffekt hinzu */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 #fh5co-testimonial .overlay {
@@ -17,9 +23,9 @@
 }
 
 #fh5co-testimonial .testimony-slide {
-  text-align: center;
+  font-size: x-large;
   position: relative;
-  color: #fff;
+  color: #ffffff;
 }
 
 #fh5co-testimonial .testimony-slide span {
@@ -47,13 +53,14 @@
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
+  transition: transform 0.1s ease; /* Füge den Übergangseffekt hinzu */
 }
 
 #fh5co-testimonial .testimony-slide blockquote {
   border: none;
   margin: 30px auto;
-  width: 70%;
-  position: relative;
+  width: 90%;
+  position: center;
   padding: 0;
 }
 
@@ -72,13 +79,13 @@
 }
 
 #fh5co-testimonial .fh5co-heading {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 #fh5co-testimonial .fh5co-heading h2 {
   text-align: center;
   color: white;
-  margin: 1px;
+  margin: 5px;
 }
 
 #fh5co-testimonial .fh5co-heading h2:after {
@@ -90,14 +97,15 @@
 }
 
 #fh5co-testimonial .fh5co-heading span {
-  padding: 7px 15px;
+  padding: 10px 15px;
   position: relative;
+  text-align: center;
 }
 
 #fh5co-testimonial .fh5co-heading span:before {
   position: absolute;
-  top: 24px;
-  left: -40px;
+  top: 30px;
+  left: -50px;
   content: '';
   width: 40px;
   height: 1px;
@@ -106,28 +114,28 @@
 
 #fh5co-testimonial .fh5co-heading span:after {
   position: absolute;
-  top: 24px;
-  right: -40px;
+  top: 30px;
+  right: -50px;
   content: '';
   width: 40px;
   height: 1px;
   background: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   #fh5co-testimonial {
-    padding: 3em 0;
+    padding: 5em 0;
   }
 }
 
 #fh5co-testimonial .next,
 #fh5co-testimonial .prev {
   position: absolute;
-  top: 45%;
+  top: 40%;
   font-size: 30px;
   color: #ff0000;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 10px 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -138,9 +146,8 @@
 #fh5co-testimonial .prev:hover {
   background-color: #ff0000;
   color: #ffffff;
-  transform: scale(1.5); /* Vergrößere das Element leicht beim Hover */
+  transform: scale(1.1); /* Vergrößere das Element leicht beim Hover */
 }
-
 
 #fh5co-testimonial .next {
   right: 100px;
@@ -161,8 +168,8 @@
 
 #fh5co-testimonial .testimony-slide .user {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -170,12 +177,9 @@
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
-  transition: transform 0.1s ease; /* Füge den Übergangseffekt hinzu */
+  transition: transform .1s ease; /* Füge den Übergangseffekt hinzu */
 }
 
 #fh5co-testimonial .testimony-slide .user:hover {
   transform: scale(1.1); /* Vergrößere das Element leicht beim Hover */
 }
-
-
-
