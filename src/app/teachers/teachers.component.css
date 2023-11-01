@@ -4,7 +4,6 @@
 }
 
 .item img {
-    opacity: 40%;
     transition: .5s;
 }
 
@@ -52,7 +51,9 @@
 }
 
 .news {
+    height: 20%;
     line-height: normal;
     color: white;
+    overflow: hidden;
     margin-bottom: 2rem;
 }

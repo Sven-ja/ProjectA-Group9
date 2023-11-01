@@ -12,17 +12,14 @@
 }
 
 .navbar-nav a {
-    /* color: var(--cf-red); */
     color: black;
     padding-left: 2rem;
+}
+
+.navbar-nav a:hover {
+    color: var(--cf-red);
 }
 
 .myToggler {
     margin-right: 1.5rem;
 }
-
-/* .blanco {
-    height: 15vh;
-    position: relative;
-    top: 0;
-} */
