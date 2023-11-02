@@ -1,5 +1,6 @@
 #myCarousel {
     width: 100%;
+    margin: auto;
 }
 
 .carousel-item img {
@@ -7,7 +8,7 @@
     object-position: center;
 }
 
-.container.mt-4{
+.container.mt-4 {
     width: 100%;
     height: 100%;
     font-size: 1rem;
@@ -42,7 +43,7 @@
     transform: translateX(-15%);
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
     font-size: 34px;
     text-align: center;
     color: #8c181b;
@@ -50,7 +51,7 @@
     top: 80%;
 }
 
-.carousel-caption .btn{
+.carousel-caption .btn {
     position: absolute;
     top: 15%;
     right: 10%;
