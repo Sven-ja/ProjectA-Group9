@@ -1,27 +1,18 @@
-  .hero-section{
-    text-align: center;
-    padding: 50vh;
-    background-image: url('/assets/Amy/example1.jpg');
-    background-size: cover;
-    opacity: 0.8;
-    
-}
+    .hero-section {
+        text-align: center;
+        padding: 50vh;
+        background-image: url('/assets/Amy/example1.jpg');
+        background-size: cover;
+        opacity: 0.8;
 
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
- 
-  }
+    }
 
-h1 {
-    font-size: 2rem;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: rgba(0, 0, 0, 0.753);
-    transition: font-size 0.5s, color 0.3s; /* Füge den Übergangseffekt hinzu */
-}
-  
-h1:hover {
-    font-size: 2.2rem; /* Ändere die gewünschte Größe */
-    color: #ff0000; /* Ändere die gewünschte Farbe */
-}
+    .hero h1 {
+        color: #8c181b;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+
+    }

@@ -1,6 +1,11 @@
 #myCarousel {
+<<<<<<< HEAD
     width: 90%;
     margin: 0 auto;
+=======
+    width: 100%;
+    margin: 0;
+>>>>>>> 962b9b36df14ba4b52f415dd2b04ea079dd454d0
 }
 
 .carousel-item img {
@@ -12,7 +17,7 @@
     width: 100%;
     height: 100%;
     font-size: 1rem;
-    background-color: #ff9a9a;
+    background-color: white;
 }
 
 .carousel {
@@ -58,14 +63,8 @@
 }
 
 h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: white;
-    transition: font-size 0.3s, color 0.3s; /* Füge den Übergangseffekt hinzu */
-  }
-  
-  h2:hover {
-    font-size: 2.2rem; /* Ändere die gewünschte Größe */
-    color: #ff0000; /* Ändere die gewünschte Farbe */
-  }
+    font-size: 48px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
