@@ -1,13 +1,21 @@
-/* Allgemeine Styles */
+
 .container {
     width: 90%;
     height: 500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     background-color: #ff9a9a;
     font-family: Arial, sans-serif;
     text-align: center; /* Zentriert den Text im Container */
 }
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+        padding: 40px;
+        height: 1000px;
+    }
+  }
 
 h2 {
     font-size: 2rem;
@@ -94,3 +102,5 @@ h3 {
 .technology:hover {
     transform: translateY(-5px);
 }
+
+
