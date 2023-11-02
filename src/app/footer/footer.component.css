@@ -44,6 +44,13 @@ footer {
   font-size: 1em;
 }
 
+a:hover {
+  color: #8c181b;
+  transform: scale(1.2);
+}
+
+
+
 @media screen and(min-width: 481px) and (max-width: 1024px){
   .footer-container {
       flex-direction: column;
