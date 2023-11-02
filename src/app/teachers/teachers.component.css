@@ -3,6 +3,7 @@
     max-width: 500px;
 }
 
+
 .item img {
     transition: .5s;
 }
@@ -55,5 +56,5 @@
     line-height: normal;
     color: white;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 10%;
 }
