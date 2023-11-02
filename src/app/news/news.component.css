@@ -1,11 +1,8 @@
 #myCarousel {
-<<<<<<< HEAD
-    width: 90%;
-    margin: 0 auto;
-=======
+    margin: auto;
     width: 100%;
     margin: 0;
->>>>>>> 962b9b36df14ba4b52f415dd2b04ea079dd454d0
+
 }
 
 .carousel-item img {
@@ -13,7 +10,7 @@
     object-position: center;
 }
 
-.container.mt-4{
+.container.mt-4 {
     width: 100%;
     height: 100%;
     font-size: 1rem;
@@ -26,14 +23,14 @@
     background-color: white;
 }
 
-.carousel-item{
+.carousel-item {
     background-color: rgb(255, 204, 204, 0.4);
     height: 100%;
     width: 100%;
 }
 
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgb(255, 204, 204, 0.4);
     width: 100%;
     position: absolute;
@@ -48,7 +45,7 @@
     transform: translateX(-15%);
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
     font-size: 34px;
     text-align: center;
     color: black;
@@ -56,7 +53,7 @@
     top: 80%;
 }
 
-.carousel-caption .btn{
+.carousel-caption .btn {
     position: absolute;
     top: 15%;
     right: 10%;
