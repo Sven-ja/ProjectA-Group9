@@ -1,6 +1,6 @@
 /* Allgemeine Styles */
 .container {
-    max-width: 1200px;
+    width: 90%;
     height: 500px;
     margin: 0 auto;
     padding: 20px;
