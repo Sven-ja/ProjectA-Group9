@@ -1,11 +1,12 @@
-
 #fh5co-testimonial {
   background: #0072be;
   position: relative;
   padding: 3em 0;
-  height: 700px; /* Setze die gewünschte Höhe in Pixeln */
+  height: 600px;
+  /* Setze die gewünschte Höhe in Pixeln */
   overflow: hidden;
-  transition: 1s ease; /* Füge den Übergangseffekt hinzu */
+  transition: 1s ease;
+  /* Füge den Übergangseffekt hinzu */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -55,7 +56,8 @@
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
-  transition: transform 0.1s ease; /* Füge den Übergangseffekt hinzu */
+  transition: transform 0.1s ease;
+  /* Füge den Übergangseffekt hinzu */
 }
 
 #fh5co-testimonial .testimony-slide blockquote {
@@ -140,14 +142,16 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: background-color 2s ease, transform 0.5s ease; /* Füge den Übergangseffekt hinzu */
+  transition: background-color 2s ease, transform 0.5s ease;
+  /* Füge den Übergangseffekt hinzu */
 }
 
 #fh5co-testimonial .next:hover,
 #fh5co-testimonial .prev:hover {
   background-color: #ff0000;
   color: #ffffff;
-  transform: scale(1.1); /* Vergrößere das Element leicht beim Hover */
+  transform: scale(1.1);
+  /* Vergrößere das Element leicht beim Hover */
 }
 
 #fh5co-testimonial .next {
@@ -178,11 +182,13 @@
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
-  transition: transform .1s ease; /* Füge den Übergangseffekt hinzu */
+  transition: transform .1s ease;
+  /* Füge den Übergangseffekt hinzu */
 }
 
 #fh5co-testimonial .testimony-slide .user:hover {
-  transform: scale(1.1); /* Vergrößere das Element leicht beim Hover */
+  transform: scale(1.1);
+  /* Vergrößere das Element leicht beim Hover */
 }
 
 .col-md-12 h2 {
@@ -190,12 +196,15 @@
   margin-top: 20px;
   margin-bottom: 40px;
   color: white;
-  transition: font-size 0.3s, color 0.3s; /* Füge den Übergangseffekt hinzu */
+  transition: font-size 0.3s, color 0.3s;
+  /* Füge den Übergangseffekt hinzu */
 }
 
 .col-md-12 h2:hover {
-  font-size: 2.2rem; /* Ändere die gewünschte Größe */
-  color: #ff0000; /* Ändere die gewünschte Farbe */
+  font-size: 2.2rem;
+  /* Ändere die gewünschte Größe */
+  color: #ff0000;
+  /* Ändere die gewünschte Farbe */
 }
 
 
@@ -206,31 +215,35 @@
   color: #fff;
   animation: glowing 2s infinite;
   transition: font-size 0.3s;
-  padding: 0; /* Aufhebung der Padding-Begrenzung */
-  margin: 0; /* Aufhebung der Margin-Begrenzung */
-  line-height: normal; /* Aufhebung der Zeilenhöhe-Begrenzung */
+  padding: 0;
+  /* Aufhebung der Padding-Begrenzung */
+  margin: 0;
+  /* Aufhebung der Margin-Begrenzung */
+  line-height: normal;
+  /* Aufhebung der Zeilenhöhe-Begrenzung */
 }
 
 
 #person1 blockquote p:hover,
 #person2 blockquote p:hover,
 #person3 blockquote p:hover {
-  font-size: 24px; /* Ändere die Schriftgröße beim Hover nach deinen Wünschen */
+  font-size: 24px;
+  /* Ändere die Schriftgröße beim Hover nach deinen Wünschen */
 }
 
 @keyframes glowing {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Anfangsleuchten */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    /* Anfangsleuchten */
   }
+
   50% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Höhepunkt des Leuchtens */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    /* Höhepunkt des Leuchtens */
   }
+
   100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Endleuchten */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    /* Endleuchten */
   }
 }
-
-
-
-
-
