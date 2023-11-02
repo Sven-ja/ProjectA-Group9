@@ -3,7 +3,7 @@
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ff9a9a;
+    background-color: rgba(255, 255, 255, 0.8);
     font-family: Arial, sans-serif;
     text-align: center; /* Zentriert den Text im Container */
 }
