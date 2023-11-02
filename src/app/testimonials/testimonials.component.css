@@ -2,7 +2,7 @@
   background: #0072be;
   position: relative;
   padding: 3em 0;
-  height: 600px;
+  height: 700px;
   /* Setze die gewünschte Höhe in Pixeln */
   overflow: hidden;
   transition: 1s ease;
@@ -12,7 +12,6 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  margin: 5%;
 }
 
 #fh5co-testimonial .overlay {
