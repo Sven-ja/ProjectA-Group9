@@ -1,15 +1,30 @@
 .container {
+    margin: 10vh;
     padding: 50px 0px;
     text-align: center;
   }
   
-  #our-mission h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+  h2{
+    font-size: 2rem;
+    margin-bottom: 70px;
   }
   
   #our-mission p {
-    font-size: 18px;
+    font-size: 1em;
     color: #333;
   }
   
+  @media (min-width: 481px) and (max-width: 1024px){
+    .container {
+        margin: 5vh;
+        padding: 30px 0px;
+    }
+
+    #headline {
+        font-size: 1.5rem;
+    }
+
+    #our-mission p {
+        font-size: 0.9em;
+    }
+}
