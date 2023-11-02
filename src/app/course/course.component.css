@@ -14,16 +14,9 @@
     justify-content: space-evenly;
 }
 
-h1{
-    font-size: 48px;
+h3{
+    font-size: 24px;
     text-align: center;
-    color: black;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 36px;
-    text-align: center;
-    color: black;
+    color: #8c181b;
     font-weight: bold;
 }

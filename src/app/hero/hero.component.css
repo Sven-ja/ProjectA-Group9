@@ -10,11 +10,14 @@
 
     .hero h1 {
         color: #8c181b;
+        font-size: 48px;
+        font-weight: bold;
     }
 
     .hero-section p {
         font-size: 1.2rem;
         margin-bottom: 30px;
+        font-size: 30px;
 
     }
 

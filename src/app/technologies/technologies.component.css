@@ -12,7 +12,7 @@ h2 {
     font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 40px;
-    color: white;
+    color: #8c181b;
     transition: font-size 0.3s, color 0.3s; /* Füge den Übergangseffekt hinzu */
   }
   

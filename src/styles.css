@@ -26,3 +26,27 @@ body {
 .wrapper{
     margin-bottom: auto;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Edu+TAS+Beginner&family=Handjet&family=Happy+Monkey&family=Montserrat&family=Tektur:wght@500&display=swap');
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.edutas {
+    font-family: 'Edu TAS Beginner';
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #8c181b;
+    transition: font-size 0.3s, color 0.3s;
+}
+  
+h2:hover {
+    font-size: 2.2rem;
+    color: #8c181b;
+}
